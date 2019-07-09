@@ -8,7 +8,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootMysqlApplication implements CommandLineRunner{
+public class SpringBootMysqlApplication
+		implements CommandLineRunner{
 
 	 private static final Logger log = LoggerFactory.getLogger(SpringBootMysqlApplication.class);
 

@@ -15,7 +15,8 @@ public class MyController {
     @Value("${welcome.message}")
     private String message;
 
-    private List<String> tasks = Arrays.asList("a", "b", "c", "d", "e", "f", "g");
+    private List<String> tasks = 
+    		Arrays.asList("a", "b", "c", "d", "e", "f", "g");
 
     @GetMapping("/")
     public String main(Model model) {
@@ -28,7 +29,8 @@ public class MyController {
     // /hello?name=Amit
     @GetMapping("/hello")
     public String mainWithParam(
-            @RequestParam(name = "name", required = false, defaultValue = "") 
+            @RequestParam(name = "name",
+            required = false, defaultValue = "") 
 			String name, Model model) {
 
         model.addAttribute("message", name);
